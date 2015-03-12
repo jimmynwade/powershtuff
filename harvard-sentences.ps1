@@ -5,8 +5,8 @@ $a = ($List1.RawContent -join "")
 $b = ($a -split "
 ")[15..$($a.Length)]
 
-# Add ffmpeg bin directory to PATH variable
-$env:Path += “;C:\Users\wade.199\Desktop\ffmpeg-20140307-git-64e4bd7-win64-static\bin”
+# Make sure to add ffmpeg bin directory to PATH variable
+# $env:Path += “;C:\Users\wade.199\Desktop\ffmpeg-20140307-git-64e4bd7-win64-static\bin”
 
 Add-Type -AssemblyName System.Drawing
 add-type -AssemblyName System.Speech
